@@ -1,0 +1,70 @@
+.cover img {
+  width: 100%;
+  object-fit: cover;
+}
+.backdrop {
+  position: relative;
+}
+.image-backdrop {
+}
+.image-backdrop img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+}
+.btm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  font-weight: 600;
+  color: #fff;
+  gap: 0 10px;
+  width: 100%;
+  padding: 0 30px;
+}
+.title {
+  display: flex;
+  align-items: flex-end;
+}
+.title img {
+  width: 100%;
+  max-width: 150px;
+  border: 3px solid #fff;
+}
+.status {
+  display: flex;
+  gap: 0 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 15px;
+}
+.box-body {
+  padding: 30px 20px;
+}
+.box-body * {
+  margin: 15px 0;
+}
+.genre span {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  font-size: 11px;
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}

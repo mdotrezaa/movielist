@@ -1,0 +1,8 @@
+export const ActionTypes = {
+    SET_GENRE : "SET_GENRE",
+    GENRE_ERROR : 'GENRE_ERROR',
+
+    SET_MOVIE : "SET_MOVIE",
+    SELECTED_MOVIE : "SELECTED_MOVIE",
+    MOVIE_ERROR : 'MOVIE_ERROR'
+}

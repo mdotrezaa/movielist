@@ -1,0 +1,18 @@
+@import "./base/variable.css";
+@import "./pages/dashboard.css";
+@import "./layout/sidenav.css";
+@import "./layout/header.css";
+@import "./pages/movie.css";
+body {
+  background: var(--color-white);
+  font-family: var(--font-primary);
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+.box {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
