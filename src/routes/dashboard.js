@@ -83,15 +83,15 @@ export default function Dashboard() {
         </Col>
       </Row>
       <Row>
-        {movies.slice(0, 5).map((item, index) => (
-          <Col xs={"6"} md={"3"} key={index}>
+        {movies.slice(0, 6).map((item, index) => (
+          <Col xs={"6"} md={"2"} key={index}>
             <a href={"/movie/" + item.id}>
               <div className='thumbnail'>
                 <img
                   src={"http://image.tmdb.org/t/p/original" + item.poster_path}
                 />
                 <div className='overlay-thumbnail'>
-                  <h1>{item.title}</h1>
+                  <h5>{item.title}</h5>
                 </div>
               </div>
             </a>

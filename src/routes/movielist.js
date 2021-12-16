@@ -52,7 +52,7 @@ export default function MovieList() {
       cell: (row) => (
         <img
           className='poster'
-          src={"http://image.tmdb.org/t/p/w185" + row.poster_path}
+          src={"http://image.tmdb.org/t/p/original" + row.poster_path}
         />
       ),
     },
