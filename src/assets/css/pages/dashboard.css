@@ -1,0 +1,40 @@
+.section1{
+    margin-bottom: 30px;
+}
+.section1 h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.section1 .box{
+    background: #fff;
+    color: var(--color-secondary);
+    padding: 15px 20px;
+}
+.section1 .box p{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: right;
+}
+.thumbnail{
+    position: relative;
+    margin: 5px 10px;
+}
+.thumbnail img{
+    width: 100%;
+}
+.overlay-thumbnail{
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6));
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.overlay-thumbnail h1{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+}

@@ -2,6 +2,9 @@
   width: 100%;
   object-fit: cover;
 }
+.poster{
+  width: 100%;
+}
 .backdrop {
   position: relative;
 }
@@ -9,7 +12,7 @@
 }
 .image-backdrop img {
   width: 100%;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
   object-position: center;
   border-top-left-radius: 5px;
@@ -18,7 +21,7 @@
 .overlay {
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6));
   left: 0;
   width: 100%;
   border-top-left-radius: 5px;
@@ -34,12 +37,13 @@
   left: 0;
   font-weight: 600;
   color: #fff;
-  gap: 0 10px;
+  gap: 0 30px;
   width: 100%;
   padding: 0 30px;
 }
 .title {
   display: flex;
+  gap: 0 20px;
   align-items: flex-end;
 }
 .title img {
@@ -57,8 +61,17 @@
 .box-body {
   padding: 30px 20px;
 }
-.box-body * {
-  margin: 15px 0;
+.body-status{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.genre{
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .genre span {
   border: 2px solid rgba(0, 0, 0, 0.3);
@@ -67,4 +80,49 @@
   padding: 10px;
   margin-right: 10px;
   font-weight: 600;
+}
+.vote{
+  border-radius: 3px;
+  padding: 15px;
+  color: #fff;
+  background: var(--color-primary);
+  font-weight: 600;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.sidelist{
+  display: flex;
+  float: right;
+  gap: 0 30px;
+  text-align: center;
+  padding: 0;
+}
+.sidelist li{
+  padding: 10px 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sidelist li a{
+  color: #2d2d2d;
+}
+.sidelist li a:hover{
+  color: var(--color-primary);
+}
+@media screen and (max-width: 400px) {
+  .btm{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+  }
+  .title{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+  }
 }
