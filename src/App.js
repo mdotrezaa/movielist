@@ -8,6 +8,7 @@ import MovieList from "./routes/movielist";
 import Movie from "./routes/movie";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/main.css";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
@@ -16,18 +17,20 @@ function App() {
         <Sidebar />
         <Header />
         <div id='main'>
-          <Switch>
-            <Route exact path='/' component={Dashboard} />
-            <Route path='/genre'>
-              <Genre />
-            </Route>
-            <Route exact path='/movie'>
-              <MovieList />
-            </Route>
-            <Route exact path='/movie/:id'>
-              <Movie />
-            </Route>
-          </Switch>
+          <Container>
+            <Switch>
+              <Route exact path='/' component={Dashboard} />
+              <Route path='/genre'>
+                <Genre />
+              </Route>
+              <Route exact path='/movie'>
+                <MovieList />
+              </Route>
+              <Route exact path='/movie/:id'>
+                <Movie />
+              </Route>
+            </Switch>
+          </Container>
         </div>
       </Router>
     </div>

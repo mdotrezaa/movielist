@@ -39,7 +39,9 @@
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
   font-size: 12px;
   cursor: pointer;
 }

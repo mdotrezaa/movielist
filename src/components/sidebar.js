@@ -9,6 +9,9 @@ export default function Sidebar() {
 
   return (
     <div id='mySidenav' class='sidenav'>
+      <a className='closebtn' onClick={closeNav}>
+        <i class='bx bx-x bx-md'></i>
+      </a>
       <ul className='sidenavlist'>
         <li className='topnav'>
           <div className='avatar'>
@@ -26,9 +29,6 @@ export default function Sidebar() {
           <a href='/movie'>Movie</a>
         </li>
       </ul>
-      <a className='closebtn' onClick={closeNav}>
-        <i class='bx bxs-left-arrow'></i> Hide
-      </a>
     </div>
   );
 }
